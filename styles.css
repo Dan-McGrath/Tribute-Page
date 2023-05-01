@@ -50,6 +50,35 @@ input {
 
 body {
   text-align: center;
-  background-image: radial-gradient(circle, rgb(247, 130, 0) 0%, rgb(0, 142, 152) 46%, rgb(0, 86, 121) 76%);
+  background-image: radial-gradient(circle, hsl(32, 100%, 48%) 0%, hsl(184, 100%, 30%) 46%, hsl(197, 100%, 24%) 76%);
   background-repeat: no-repeat;
+  font-size: 1.2rem;
+}
+body h2 {
+  font-family: "BioRhyme", serif;
+  font-weight: 200;
+  font-size: 2rem;
+}
+body p {
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(32, 100%, 48%);
+}
+header h1 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 3rem 0 2rem;
+}
+header p {
+  padding: 1rem 0 2rem;
+  font-size: 2rem;
+  color: hsl(184, 100%, 30%);
 }/*# sourceMappingURL=styles.css.map */
