@@ -119,11 +119,13 @@ header {
         font-family: $font-header;
         font-size: $fs-700;
         font-weight: $fw-bold-header;
+        padding: 1rem 0;
     }
 
     p {
         font-size: $fs-600;
         color: $color-text-secondary;
+        padding-bottom: 2rem;
     }
 
 }
@@ -138,21 +140,17 @@ header {
 .hero {
     display: grid;
     grid-template-columns: 1fr;
-    margin: auto;
+    margin: 1.5rem auto;
     align-items: center;
     max-width: 1200px;
 
     
     .hero__img {
-
+        margin-bottom: 1rem;
         background-color: $color-grey-600;
-
-
-
 
         img {
             max-width: 100%;
-
         }
 
         figcaption {
@@ -161,6 +159,7 @@ header {
             font-family: $font-title;
             font-size: $fs-400;
             font-weight: $fw-light-title;
+            padding: 1rem;
         }
     }
 
@@ -168,11 +167,9 @@ header {
         font-size: $fs-500;
         background-color: $color-grey-600;
         color: $color-text-secondary;
-
-
         text-align: left;
         border-radius: 10px;
-
+        padding: 2rem 0;
 
         .name {
             text-align: center;
@@ -180,10 +177,11 @@ header {
             font-size: $fs-500;
             font-family: $font-title;
             font-weight: $fw-light-title;
+            padding: 0.5rem 0;
         }
 
         p {
-            
+            padding: 1rem;
         }
 
         span {
@@ -213,17 +211,20 @@ header {
         font-family: $font-title;
         font-weight: $fw-bold-header;
         font-size: $fs-700;
+        margin: 1rem 0;
 
         h2 {
-
+            padding: 1rem 2rem;
         }
     }
 
     ol {
-        display: inline-block;
         text-align: center;
+        
         li {
             font-size: $fs-500;
+            padding: 0.5rem;
+            
 
         }
     }
