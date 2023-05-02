@@ -54,15 +54,6 @@ body {
   background-repeat: no-repeat;
   font-size: 1.2rem;
 }
-body h2 {
-  font-family: "BioRhyme", serif;
-  font-weight: 200;
-  font-size: 2rem;
-}
-body p {
-  font-family: "Hind", sans-serif;
-  font-weight: 400;
-}
 
 header {
   display: flex;
@@ -90,7 +81,8 @@ header p {
 }
 .hero .hero__img {
   background-color: hsl(0, 0%, 13%);
-  margin-left: 2rem;
+  padding: 1rem;
+  width: 100%;
 }
 .hero .hero__img img {
   max-width: 100%;
@@ -117,10 +109,43 @@ header p {
   text-align: center;
   color: hsl(32, 100%, 48%);
   padding: 1rem 0;
+  font-size: 2rem;
+  font-family: "BioRhyme", serif;
+  font-weight: 200;
 }
 .hero .hero__text p {
   padding: 1rem;
 }
 .hero .hero__text span {
   color: hsl(32, 100%, 48%);
+}
+
+.history {
+  background-color: hsl(0, 0%, 43%);
+  border-radius: 20px;
+  max-width: 75vw;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history .title {
+  margin: 2rem;
+  background-color: hsl(0, 0%, 13%);
+  border-radius: 30px;
+  color: hsl(197, 100%, 24%);
+  font-family: "BioRhyme", serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.history .title h2 {
+  padding: 3rem 10rem;
+}
+.history ol {
+  display: inline-block;
+  text-align: center;
+}
+.history ol li {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
 }/*# sourceMappingURL=styles.css.map */
