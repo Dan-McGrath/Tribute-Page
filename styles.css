@@ -127,11 +127,10 @@ header p {
   align-items: center;
 }
 .history .title {
-  background-color: hsl(0, 0%, 13%);
   border-radius: 10px;
   color: hsl(197, 100%, 24%);
   font-family: "BioRhyme", serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 3rem;
   margin: 1rem 0;
   width: 100%;
@@ -142,21 +141,24 @@ header p {
 
 .history-info-con ol {
   text-align: center;
+  padding: 1rem 0 2rem;
 }
 .history-info-con ol li {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap-reverse;
   font-size: 1.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem 3rem;
   color: hsl(184, 100%, 30%);
   background-color: hsl(0, 0%, 20%);
 }
 .history-info-con ol li p {
-  padding: 0.3rem 0 1rem;
+  padding: 0.5rem 0 1rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
   color: hsl(32, 100%, 48%);
   border-bottom: 2px solid hsl(184, 100%, 30%);
 }/*# sourceMappingURL=styles.css.map */

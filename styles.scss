@@ -207,11 +207,10 @@ header {
 
 
     .title {
-        background-color: $color-grey-600;
         border-radius: 10px;
         color: $color-text-primary;
         font-family: $font-title;
-        font-weight: $fw-bold-header;
+        font-weight: $fw-bold-title;
         font-size: $fs-700;
         margin: 1rem 0;
         width: 100%;
@@ -227,22 +226,28 @@ header {
 .history-info-con {
     ol {
         text-align: center;
+        padding: 1rem 0 2rem;
         
         li {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap-reverse;
             font-size: $fs-500;
-            padding: 0.5rem;
+            padding: 0.5rem 1rem 3rem;
             color: $color-text-secondary;
             background-color: $color-grey-500;
+            
+
             p{
-                padding: 0.3rem 0 1rem;
+                padding: 0.5rem 0 1rem;
                 font-family: $font-title;
                 font-weight: $fw-light-title;
                 font-size: $fs-400;
+                letter-spacing: 1px;
+                line-height: 1.2;
                 color: $color-text-accent;
                 border-bottom: 2px solid $color-text-secondary;
+
             }
 
         }
