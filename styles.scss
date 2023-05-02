@@ -62,7 +62,7 @@ $color-grey-300: hsl(0, 0%, 43%);
 $color-grey-400: hsl(0, 0%, 32%);
 $color-grey-500: hsl(0, 0%, 20%);
 $color-grey-600: hsl(0, 0%, 13%);
-$bg-image: radial-gradient(circle, hsl(32, 100%, 48%) 0%, hsl(184, 100%, 30%) 46%, hsl(197, 100%, 24%) 76%);
+$bg-image: linear-gradient(0deg, rgba(247,130,0,1) 0%, rgba(0,142,152,1) 50%, rgba(0,86,121,1) 100%);
 
 
     // Typography
@@ -160,6 +160,7 @@ header {
             font-size: $fs-400;
             font-weight: $fw-light-title;
             padding: 1rem;
+            line-height: 1.2;
         }
     }
 
@@ -204,27 +205,45 @@ header {
     flex-direction: column;
     align-items: center;
 
+
     .title {
         background-color: $color-grey-600;
-        border-radius: 30px;
+        border-radius: 10px;
         color: $color-text-primary;
         font-family: $font-title;
         font-weight: $fw-bold-header;
         font-size: $fs-700;
         margin: 1rem 0;
+        width: 100%;
 
         h2 {
             padding: 1rem 2rem;
         }
     }
 
+    
+}
+
+.history-info-con {
     ol {
         text-align: center;
         
         li {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
             font-size: $fs-500;
             padding: 0.5rem;
-            
+            color: $color-text-secondary;
+            background-color: $color-grey-500;
+            p{
+                padding: 0.3rem 0 1rem;
+                font-family: $font-title;
+                font-weight: $fw-light-title;
+                font-size: $fs-400;
+                color: $color-text-accent;
+                border-bottom: 2px solid $color-text-secondary;
+            }
 
         }
     }

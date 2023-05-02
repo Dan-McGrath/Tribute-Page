@@ -50,7 +50,7 @@ input {
 
 body {
   text-align: center;
-  background-image: radial-gradient(circle, hsl(32, 100%, 48%) 0%, hsl(184, 100%, 30%) 46%, hsl(197, 100%, 24%) 76%);
+  background-image: linear-gradient(0deg, rgb(247, 130, 0) 0%, rgb(0, 142, 152) 50%, rgb(0, 86, 121) 100%);
   font-size: 1.2rem;
 }
 
@@ -94,6 +94,7 @@ header p {
   font-size: 1.2rem;
   font-weight: 200;
   padding: 1rem;
+  line-height: 1.2;
 }
 .hero .hero__text {
   font-size: 1.5rem;
@@ -127,20 +128,35 @@ header p {
 }
 .history .title {
   background-color: hsl(0, 0%, 13%);
-  border-radius: 30px;
+  border-radius: 10px;
   color: hsl(197, 100%, 24%);
   font-family: "BioRhyme", serif;
   font-weight: 700;
   font-size: 3rem;
   margin: 1rem 0;
+  width: 100%;
 }
 .history .title h2 {
   padding: 1rem 2rem;
 }
-.history ol {
+
+.history-info-con ol {
   text-align: center;
 }
-.history ol li {
+.history-info-con ol li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
   font-size: 1.5rem;
   padding: 0.5rem;
+  color: hsl(184, 100%, 30%);
+  background-color: hsl(0, 0%, 20%);
+}
+.history-info-con ol li p {
+  padding: 0.3rem 0 1rem;
+  font-family: "BioRhyme", serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: hsl(32, 100%, 48%);
+  border-bottom: 2px solid hsl(184, 100%, 30%);
 }/*# sourceMappingURL=styles.css.map */
