@@ -147,6 +147,58 @@ header {
 
 // Hero
 
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .hero__img {
+        background-color: $color-grey-600;
+        margin-left: 2rem;
+
+        img {
+            
+            max-width: 100%;
+
+        }
+
+        figcaption {
+            color: $color-text-accent;
+            background: $color-grey-600;
+            padding: 1rem 0;
+            line-height: 1.5;
+            font-family: $font-title;
+            font-size: $fs-400;
+            font-weight: $fw-light-title;
+        }
+    }
+
+    .hero__text {
+        font-size: $fs-500;
+        background-color: $color-grey-600;
+        color: $color-text-secondary;
+        margin: 2rem;
+        padding: 2rem;
+        text-align: left;
+        border-radius: 10px;
+
+        .name {
+            text-align: center;
+            color: $color-text-accent;
+            padding: 1rem 0;
+        }
+
+        p {
+            
+            padding: 1rem;
+        }
+
+        span {
+            color: $color-text-accent;
+        }
+    }
+}
+
 // END HERO
 
 
