@@ -51,7 +51,6 @@ input {
 body {
   text-align: center;
   background-image: radial-gradient(circle, hsl(32, 100%, 48%) 0%, hsl(184, 100%, 30%) 46%, hsl(197, 100%, 24%) 76%);
-  background-repeat: no-repeat;
   font-size: 1.2rem;
 }
 
@@ -66,23 +65,21 @@ header h1 {
   font-family: "Exo 2", sans-serif;
   font-size: 3rem;
   font-weight: 700;
-  padding: 3rem 0 2rem;
 }
 header p {
-  padding: 1rem 0 2rem;
   font-size: 2rem;
   color: hsl(184, 100%, 30%);
 }
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  margin: auto;
   align-items: center;
+  max-width: 1200px;
 }
 .hero .hero__img {
   background-color: hsl(0, 0%, 13%);
-  padding: 1rem;
-  width: 100%;
 }
 .hero .hero__img img {
   max-width: 100%;
@@ -90,8 +87,6 @@ header p {
 .hero .hero__img figcaption {
   color: hsl(32, 100%, 48%);
   background: hsl(0, 0%, 13%);
-  padding: 1rem 0;
-  line-height: 1.5;
   font-family: "BioRhyme", serif;
   font-size: 1.2rem;
   font-weight: 200;
@@ -100,21 +95,15 @@ header p {
   font-size: 1.5rem;
   background-color: hsl(0, 0%, 13%);
   color: hsl(184, 100%, 30%);
-  margin: 2rem;
-  padding: 2rem;
   text-align: left;
   border-radius: 10px;
 }
 .hero .hero__text .name {
   text-align: center;
   color: hsl(32, 100%, 48%);
-  padding: 1rem 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-}
-.hero .hero__text p {
-  padding: 1rem;
 }
 .hero .hero__text span {
   color: hsl(32, 100%, 48%);
@@ -123,14 +112,11 @@ header p {
 .history {
   background-color: hsl(0, 0%, 43%);
   border-radius: 20px;
-  max-width: 75vw;
-  margin: 5rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .history .title {
-  margin: 2rem;
   background-color: hsl(0, 0%, 13%);
   border-radius: 30px;
   color: hsl(197, 100%, 24%);
@@ -138,14 +124,10 @@ header p {
   font-weight: 700;
   font-size: 3rem;
 }
-.history .title h2 {
-  padding: 3rem 10rem;
-}
 .history ol {
   display: inline-block;
   text-align: center;
 }
 .history ol li {
   font-size: 1.5rem;
-  padding: 0.5rem 0;
 }/*# sourceMappingURL=styles.css.map */

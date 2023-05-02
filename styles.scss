@@ -77,7 +77,7 @@ $font-title: ('BioRhyme', serif);
 $font-text: ('Hind', sans-serif);
 
         // Font size
-
+$fs-mobile: 0.75rem;
 $fs-400: 1.2rem;
 $fs-500: 1.5rem;
 $fs-600: 2rem;
@@ -92,10 +92,10 @@ $fw-light-title: 200;
 $fw-bold-title: 400;
 
 
+
 body {
     text-align: center;
     background-image: $bg-image;
-    background-repeat: no-repeat;
     font-size: $fs-400;
 }
 
@@ -114,15 +114,14 @@ header {
     background-color: $color-grey-500;
     color: $color-text-accent;
 
+
     h1 {
         font-family: $font-header;
         font-size: $fs-700;
         font-weight: $fw-bold-header;
-        padding: 3rem 0 2rem;
     }
 
     p {
-        padding: 1rem 0 2rem;
         font-size: $fs-600;
         color: $color-text-secondary;
     }
@@ -138,13 +137,16 @@ header {
 
 .hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: auto;
     align-items: center;
+    max-width: 1200px;
 
+    
     .hero__img {
+
         background-color: $color-grey-600;
-        padding: 1rem;
-        width: 100%;
+
 
 
 
@@ -155,9 +157,7 @@ header {
 
         figcaption {
             color: $color-text-accent;
-            background: $color-grey-600;
-            padding: 1rem 0;
-            line-height: 1.5;
+            background: $color-grey-600;;
             font-family: $font-title;
             font-size: $fs-400;
             font-weight: $fw-light-title;
@@ -168,23 +168,22 @@ header {
         font-size: $fs-500;
         background-color: $color-grey-600;
         color: $color-text-secondary;
-        margin: 2rem;
-        padding: 2rem;
+
+
         text-align: left;
         border-radius: 10px;
+
 
         .name {
             text-align: center;
             color: $color-text-accent;
-            padding: 1rem 0;
-            font-size: $fs-600;
+            font-size: $fs-500;
             font-family: $font-title;
             font-weight: $fw-light-title;
         }
 
         p {
             
-            padding: 1rem;
         }
 
         span {
@@ -203,24 +202,19 @@ header {
 .history {
     background-color: $color-grey-300;
     border-radius: 20px;
-    max-width: 75vw;
-    margin: 5rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .title {
-        margin: 2rem;
         background-color: $color-grey-600;
         border-radius: 30px;
-
         color: $color-text-primary;
         font-family: $font-title;
         font-weight: $fw-bold-header;
         font-size: $fs-700;
 
         h2 {
-            padding: 3rem 10rem;
 
         }
     }
@@ -230,7 +224,7 @@ header {
         text-align: center;
         li {
             font-size: $fs-500;
-            padding: 0.5rem 0;
+
         }
     }
 }
