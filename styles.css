@@ -183,11 +183,13 @@ header p {
   display: grid;
 }
 .records .stats-container h3 {
+  background-color: hsl(197, 100%, 24%);
   font-family: "Exo 2", sans-serif;
-  color: hsl(197, 100%, 24%);
-  border: 1px solid hsl(0, 0%, 13%);
+  color: hsl(32, 100%, 48%);
+  border: 1px solid hsl(0, 0%, 32%);
   border-radius: 10px;
   padding: 1rem 0;
+  box-shadow: 0 0 30px 5px hsl(184, 100%, 30%);
 }
 
 .record h4 {
