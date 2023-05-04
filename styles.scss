@@ -337,5 +337,24 @@ header {
 
 
 // Footer
+footer {
+    background-color: $color-grey-500;
+    padding: 4rem;
+
+    p {
+        font-size: $fs-600;
+        color: $color-text-primary;
+
+        a {
+            text-decoration: none;
+            color: $color-text-accent;
+
+            &:hover {
+                color: $color-text-secondary;
+            }
+        }
+    
+    }
+}
 
 // END FOOTER

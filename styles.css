@@ -217,4 +217,20 @@ header p {
   padding: 1rem 0;
   margin-bottom: 1rem;
   font-size: 2rem;
+}
+
+footer {
+  background-color: hsl(0, 0%, 20%);
+  padding: 4rem;
+}
+footer p {
+  font-size: 2rem;
+  color: hsl(197, 100%, 24%);
+}
+footer p a {
+  text-decoration: none;
+  color: hsl(32, 100%, 48%);
+}
+footer p a:hover {
+  color: hsl(184, 100%, 30%);
 }/*# sourceMappingURL=styles.css.map */
