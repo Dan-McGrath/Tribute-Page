@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+html, body, div, span, object, iframe, figure, h1, h2, h4, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
     margin: 0;
     padding: 0;
     border: 0;
@@ -77,7 +77,7 @@ $font-title: ('BioRhyme', serif);
 $font-text: ('Hind', sans-serif);
 
         // Font size
-$fs-mobile: 0.75rem;
+$fs-mobile: 1rem;
 $fs-400: 1.2rem;
 $fs-500: 1.5rem;
 $fs-600: 2rem;
@@ -261,6 +261,73 @@ header {
 
 
 // Records
+
+.records {
+    background-color: $color-grey-300;
+    margin: 2rem;
+    padding: 1rem;
+
+    .title {
+        font-size: $fs-600;
+        font-family: $font-title;
+        font-weight: $fw-light-title;
+        color: $color-text-secondary;
+        background-color: $color-grey-600;
+        width: 80%;
+        margin: 1rem auto;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .stats-container {
+        display: grid;
+
+        h3 {
+            font-family: $font-header;
+            color: $color-text-primary;
+            border: 1px solid $color-grey-600;
+            border-radius: 10px;
+            padding: 1rem 0;
+        }
+    }
+
+}
+
+
+.record {
+    h4 {
+        font-size: $fs-400;
+        font-family: $font-title;
+        font-weight: $fw-bold-title;
+        color: hsla(0, 0%, 100%, 0.7);
+        margin-top: 1rem;
+        padding: 1rem 0 1rem;
+
+    }
+
+    p {
+        font-size: $fs-400;
+        padding-top: 1rem;
+        font-weight: $fw-bold-title;
+        &:not([class='category']) {
+            font-size: $fs-mobile;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid $color-text-primary;
+            color: hsla(0, 0%, 0%, 0.60);
+        }
+        
+        .amount {
+            display: block;
+            color: $color-text-accent;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            font-size: $fs-600;
+        }
+    }
+    
+    
+}
+
 
 // END RECORDS
 

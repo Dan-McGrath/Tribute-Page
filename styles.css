@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+html, body, div, span, object, iframe, figure, h1, h2, h4, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -161,4 +161,58 @@ header p {
   line-height: 1.2;
   color: hsl(32, 100%, 48%);
   border-bottom: 2px solid hsl(184, 100%, 30%);
+}
+
+.records {
+  background-color: hsl(0, 0%, 43%);
+  margin: 2rem;
+  padding: 1rem;
+}
+.records .title {
+  font-size: 2rem;
+  font-family: "BioRhyme", serif;
+  font-weight: 200;
+  color: hsl(184, 100%, 30%);
+  background-color: hsl(0, 0%, 13%);
+  width: 80%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.records .stats-container {
+  display: grid;
+}
+.records .stats-container h3 {
+  font-family: "Exo 2", sans-serif;
+  color: hsl(197, 100%, 24%);
+  border: 1px solid hsl(0, 0%, 13%);
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+
+.record h4 {
+  font-size: 1.2rem;
+  font-family: "BioRhyme", serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.7);
+  margin-top: 1rem;
+  padding: 1rem 0 1rem;
+}
+.record p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  font-weight: 400;
+}
+.record p:not([class=category]) {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid hsl(197, 100%, 24%);
+  color: hsla(0, 0%, 0%, 0.6);
+}
+.record p .amount {
+  display: block;
+  color: hsl(32, 100%, 48%);
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }/*# sourceMappingURL=styles.css.map */
