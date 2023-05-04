@@ -50,7 +50,7 @@ input {
 
 body {
   text-align: center;
-  background-image: linear-gradient(0deg, rgb(247, 130, 0) 0%, rgb(0, 142, 152) 50%, rgb(0, 86, 121) 100%);
+  background-image: radial-gradient(circle, rgb(247, 130, 0) 0%, rgb(0, 142, 152) 79%, rgb(0, 86, 121) 100%);
   font-size: 1.2rem;
 }
 
