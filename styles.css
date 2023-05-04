@@ -163,6 +163,26 @@ header p {
   border-bottom: 2px solid hsl(184, 100%, 30%);
 }
 
+@media screen and (min-width: 760px) {
+  .history {
+    margin: 2rem;
+  }
+  .history-info-con {
+    max-width: 80%;
+  }
+  .history-info-con ol li {
+    padding: 2rem;
+  }
+  .history-info-con ol li strong {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .history-info-con ol li p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
+  }
+}
 .records {
   background-color: hsl(0, 0%, 43%);
   margin: 2rem;

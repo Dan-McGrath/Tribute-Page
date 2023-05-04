@@ -254,6 +254,37 @@ header {
     }
 }
 
+@media screen and (min-width: 760px) {
+    
+    .history { 
+        margin: 2rem; 
+    }
+    
+    
+    .history-info-con {
+        max-width: 80%;
+        ol {
+            li {
+                padding: 2rem;
+
+                strong {
+                    padding-bottom: 2rem;
+                    font-size: $fs-600;
+                }
+                
+                p{
+
+                    font-size: $fs-500;
+                    letter-spacing: 1px;
+                    line-height: 1.3;
+
+    
+                }
+    
+            }
+        }
+    }
+}
 
 // END HISTORY
 
