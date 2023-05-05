@@ -82,6 +82,7 @@ $fs-400: 1.2rem;
 $fs-500: 1.5rem;
 $fs-600: 2rem;
 $fs-700: 3rem;
+$fs-800: 4rem;
 
         // Font Weight
 
@@ -128,6 +129,26 @@ header {
         padding-bottom: 2rem;
     }
 
+}
+
+@media screen and (min-width: 500px){
+    header {
+
+    
+        h1 {
+
+            font-size: $fs-800;
+            font-weight: $fw-bold-header;
+            padding: 4rem 0;
+        }
+    
+        p {
+            font-size: $fs-700;
+
+            padding-bottom: 3rem;
+        }
+    
+    }
 }
 
 // END HEADER
@@ -195,8 +216,6 @@ header {
     .hero {
         grid-template-columns: 1fr 1fr;
         gap: 10rem;
-
-
         .hero__img {
             figcaption {
                 font-size: $fs-500;
@@ -208,31 +227,28 @@ header {
 
         .hero__text {
             font-size: $fs-500;
-            width: 80%;
             margin: auto;
 
-
-
-    
             .name {
-                text-align: center;
-                color: $color-text-accent;
-                font-size: $fs-600;
-                font-family: $font-title;
-                font-weight: $fw-light-title;
-                padding: 0.5rem 0;
-            }
-    
-            p {
+                font-size: $fs-700;
                 padding: 1rem;
             }
-    
-            span {
-                color: $color-text-accent;
-            }
+
         }
     }
     
+}
+
+
+@media screen and (min-width: 668px) {
+    .hero {
+       
+        .hero__img {
+            width: 65%;
+            margin: 2rem auto;
+
+        }
+    }
 }
 
 // END HERO
@@ -424,7 +440,7 @@ header {
 }
 
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
     
     .records{
       
@@ -432,9 +448,8 @@ header {
             margin: auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            justify-items: start;
-            max-width: 650px;
-            gap: 3rem;
+            justify-items: center;
+            gap: 6rem;
         };  
     }
     

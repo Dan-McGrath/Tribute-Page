@@ -73,6 +73,17 @@ header p {
   padding-bottom: 2rem;
 }
 
+@media screen and (min-width: 500px) {
+  header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 4rem 0;
+  }
+  header p {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+  }
+}
 .hero {
   display: grid;
   grid-template-columns: 1fr;
@@ -132,22 +143,17 @@ header p {
   }
   .hero .hero__text {
     font-size: 1.5rem;
-    width: 80%;
     margin: auto;
   }
   .hero .hero__text .name {
-    text-align: center;
-    color: hsl(32, 100%, 48%);
-    font-size: 2rem;
-    font-family: "BioRhyme", serif;
-    font-weight: 200;
-    padding: 0.5rem 0;
-  }
-  .hero .hero__text p {
+    font-size: 3rem;
     padding: 1rem;
   }
-  .hero .hero__text span {
-    color: hsl(32, 100%, 48%);
+}
+@media screen and (min-width: 668px) {
+  .hero .hero__img {
+    width: 65%;
+    margin: 2rem auto;
   }
 }
 .history {
@@ -282,14 +288,13 @@ header p {
   font-size: 2rem;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .records .stats-container {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: start;
-    max-width: 650px;
-    gap: 3rem;
+    justify-items: center;
+    gap: 6rem;
   }
 }
 footer {
